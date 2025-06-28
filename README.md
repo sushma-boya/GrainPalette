@@ -1,3 +1,4 @@
+HEAD
 # 🌾 GrainPalette: A Deep Learning Odyssey in Rice Type Classification
 
 ![Rice Fields](static/rice_fields.jpg)
@@ -85,3 +86,6 @@ Made by Sushma Naidu
 
 # License
 This project is licensed under the MIT License — see the LICENSE file for details.
+
+# GrainPalette
+ 5d21522952b132dc0c6c008e79a4285362e528a0
