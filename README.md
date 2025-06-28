@@ -93,7 +93,7 @@ pip install -r requirements.txt
 4. Run the app:
 python app.py
 
-5. Open browser and go to:  http://127.0.0.1:5000
+5. Open browser and go to: " http://127.0.0.1:5000 "
 
 #Contact
 📧 info@grainpalette.ai
