@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prediction Result</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 18px;
+      text-align: center;
+      padding: 30px;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #27ae60;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+    }
+    p {
+      font-size: 1.3rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Prediction Result</h2>
+  <img src="{{ img_path }}" alt="Uploaded Rice Image" />
+  <p>{{ prediction_text }}</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Model files (optional if you don't want to share them)
+*.h5
+*.keras
+*.pth
+*.pkl
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# Uploaded files / runtime artifacts
+uploads/
+Data/
+Training/
+Test/

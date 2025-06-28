@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Rice Image</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 18px;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input[type="file"] {
+      font-size: 1rem;
+      margin: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h2>Upload Your Rice Image</h2>
+  <form action="/result" method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" required />
+    <br />
+    <input type="submit" value="Upload & Predict" />
+  </form>
+</body>
+</html>
