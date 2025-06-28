@@ -78,6 +78,23 @@ Rice_type_detection/
 ├── .gitignore
 └── README.md
 
+##  Run This Project Locally
+
+1. Clone this repo:git clone https://github.com/sushma-boya/GrainPalette.git
+cd GrainPalette
+
+2. Create virtual environment and activate:
+python -m venv .venv
+.venv\Scripts\activate
+
+3. Install dependencies:
+pip install -r requirements.txt
+
+4. Run the app:
+python app.py
+
+5. Open browser and go to: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+
 #Contact
 📧 info@grainpalette.ai
 📞 +91 98765 43210
