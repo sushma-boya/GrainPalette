@@ -105,7 +105,7 @@ pip install -r requirements.txt
 Visit: http://127.0.0.1:5000
 
 
-
+---
 
 🧠 Model Architecture
 
@@ -121,6 +121,7 @@ Optimizer: Adam
 
 Accuracy: ~99% on training and validation sets
 
+---
 
 📈 Performance
 
@@ -130,6 +131,7 @@ Training Accuracy	99.2%
 Validation Accuracy	98.5%
 Inference Time	< 200ms
 
+---
 
 📊 Supported Rice Classes
 
@@ -143,6 +145,7 @@ Jasmine
 
 Karacadag
 
+---
 
 🚀 Future Enhancements
 
@@ -154,6 +157,7 @@ Karacadag
 
 🌐 Multi-language interface
 
+---
 
 🤝 Contributing
 
@@ -169,8 +173,10 @@ Commit with a clear message
 
 Submit a PR
 
+---
 
 #Contact
+
 📧 info@grainpalette.ai
 📞 +91 98765 43210
 
