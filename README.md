@@ -1,4 +1,4 @@
-HEAD
+
 # 🌾 GrainPalette: A Deep Learning Odyssey in Rice Type Classification
 
 ![Rice Fields](static/rice_fields.jpg)
@@ -6,7 +6,8 @@ HEAD
 GrainPalette is a deep learning-powered web app that classifies rice grain images into 5 unique types using Transfer Learning and TensorFlow. Just upload a picture and get an instant prediction of the rice type. Clean UI. High accuracy. 
 
 ---
-
+#Demo video link
+https://drive.google.com/file/d/1Kq8apZpv0F30F-kIhxNCm5KnhcoWCtfr/view?usp=drive_link
 ## Demo
 
 ➡️ Upload an image of rice grain  
