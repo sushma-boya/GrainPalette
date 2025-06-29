@@ -1,11 +1,7 @@
+🌾 GrainPalette: A Deep Learning Odyssey in Rice Type Classification
 
-# 🌾 GrainPalette: A Deep Learning Odyssey in Rice Type Classification
+GrainPalette is a powerful deep learning-powered web application built to classify rice grain images into five distinct types. Utilizing transfer learning , the system enables high-accuracy predictions directly from user-uploaded images via an intuitive web interface.
 
-![Rice Fields](static/rice_fields.jpg)
-
-GrainPalette is a deep learning-powered web app that classifies rice grain images into 5 unique types using Transfer Learning and TensorFlow. Just upload a picture and get an instant prediction of the rice type. Clean UI. High accuracy. 
-
----
 #Demo video link
 https://drive.google.com/file/d/1Kq8apZpv0F30F-kIhxNCm5KnhcoWCtfr/view?usp=drive_link
 ## Demo
@@ -19,17 +15,20 @@ https://drive.google.com/file/d/1Kq8apZpv0F30F-kIhxNCm5KnhcoWCtfr/view?usp=drive
 - Jasmine
 - Karacadag
 
----
 
-##  Features
 
-- 🔥 Transfer learning with MobileNetV2
-- 📈 Achieves 97%+ accuracy on test data
-- 🌐 Web app powered by Flask
-- ⚡ Clean responsive UI (HTML5 + Bootstrap)
-- 📷 Image upload and live prediction
+🔍 Features
 
----
+High Accuracy: Achieved 99.2% training accuracy with VGG16
+
+5 Rice Types: Supports Arborio, Basmati, Ipsala, Jasmine, Karacadag
+
+Real-Time Prediction: Upload → Predict → Result in seconds
+
+Web Interface: Built with Flask, HTML, and CSS
+
+Device Friendly: Mobile-responsive design
+
 
 ## Tech Stack
 
@@ -45,41 +44,126 @@ https://drive.google.com/file/d/1Kq8apZpv0F30F-kIhxNCm5KnhcoWCtfr/view?usp=drive
 
 #Project Structure
 
-Rice_type_detection/
-├── app.py
-├── rice_model.keras
-├── requirements.txt
-├── templates/
-│   ├── index.html
-│   ├── details.html
-│   └── results.html
+GrainPalette/
+├── app.py                     # Main Flask application
+├── rice_model.h5       # Trained deep learning model
+├── requirements.txt          # Python dependencies
+├── README.md                 # This file
 ├── static/
-│   ├── rice_banner.jpg
-│   ├── arborio_sample.jpg
-│   └── basmati_sacks.jpg
-├── .gitignore
-└── README.md
+│   └── images/               # Icons and sample rice images
+├── templates/
+│   ├── index.html            # Home page for upload
+│   ├── results.html          # Prediction results display
+│   └── details.html          # Rice types description
+└── demo video/               #  Demo .mp4
+
+⚙ Installation
+
+✅ Prerequisites
+
+Python 3.8+
+
+Git
+
+4GB+ RAM (8GB recommended)
+
+GPU (optional for training)
+
 
 ##  Run This Project Locally
 
-1. Clone this repo:git clone https://github.com/sushma-boya/GrainPalette.git
+1. Clone the Repo
+
+git clone https://github.com/sushma-boya/GrainPalette.git
 cd GrainPalette
 
-2. Create virtual environment and activate on windows:
+🌀 2. Create Virtual Environment
+
+macOS/Linux:
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+Windows:
+
 python -m venv .venv
 .venv\Scripts\activate
 
-   Create Virtual Environment macOS/Linux:
-    python3 -m venv .venv
-    source .venv/bin/activate 
+📦 3. Install Dependencies
 
-3. Install dependencies:
 pip install -r requirements.txt
 
-4. Run the app:
-python app.py
+▶ 4. Run the Flask App
 
-5. Open browser and go to: " http://127.0.0.1:5000 "
+  python app.py
+
+🌐 5. Open in Browser
+
+Visit: http://127.0.0.1:5000
+
+
+🧠 Model Architecture
+
+Base Model: VGG16 (pretrained on ImageNet)
+
+Input Size: 224×224 RGB
+
+Transfer Learning: Frozen convolution layers + custom dense layers
+
+Loss: Categorical Crossentropy
+
+Optimizer: Adam
+
+Accuracy: ~99% on training and validation sets
+
+
+📈 Performance
+
+Metric	Value
+
+Training Accuracy	99.2%
+Validation Accuracy	98.5%
+Inference Time	< 200ms
+
+
+📊 Supported Rice Classes
+
+Arborio
+
+Basmati
+
+Ipsala
+
+Jasmine
+
+Karacadag
+
+
+🚀 Future Enhancements
+
+🎥 Live camera feed support
+
+📱 Mobile app interface
+
+🧠 Advanced rice quality detection (e.g., broken grains)
+
+🌐 Multi-language interface
+
+
+🤝 Contributing
+
+Pull requests are welcome! Please:
+
+Fork the repository
+
+Create a new branch
+
+Make your changes
+
+Commit with a clear message
+
+Submit a PR
+
 
 #Contact
 📧 info@grainpalette.ai
@@ -90,5 +174,4 @@ Made by Sushma Naidu
 # License
 This project is licensed under the MIT License — see the LICENSE file for details.
 
-# GrainPalette
- 5d21522952b132dc0c6c008e79a4285362e528a0
+Thankyou..
