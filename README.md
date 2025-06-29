@@ -44,6 +44,7 @@ https://drive.google.com/file/d/1Kq8apZpv0F30F-kIhxNCm5KnhcoWCtfr/view?usp=drive
 ---
 
 #Project Structure
+
 Rice_type_detection/
 ├── app.py
 ├── rice_model.keras
