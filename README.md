@@ -44,9 +44,10 @@ Device Friendly: Mobile-responsive design
 
 #Project Structure
 
+
 GrainPalette/
 ├── app.py                     # Main Flask application
-├── rice_model.h5       # Trained deep learning model
+├── rice_model_vgg16.h5       # Trained deep learning model
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # This file
 ├── static/
@@ -55,7 +56,9 @@ GrainPalette/
 │   ├── index.html            # Home page for upload
 │   ├── results.html          # Prediction results display
 │   └── details.html          # Rice types description
-└── demo video/               #  Demo .mp4
+└── demo video/               # (Optional) Demo .mp4
+
+
 
 ⚙ Installation
 
