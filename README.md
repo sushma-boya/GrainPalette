@@ -65,9 +65,13 @@ Rice_type_detection/
 1. Clone this repo:git clone https://github.com/sushma-boya/GrainPalette.git
 cd GrainPalette
 
-2. Create virtual environment and activate:
+2. Create virtual environment and activate on windows:
 python -m venv .venv
 .venv\Scripts\activate
+
+ Create Virtual Environment macOS/Linux:
+  python3 -m venv .venv
+  source .venv/bin/activate 
 
 3. Install dependencies:
 pip install -r requirements.txt
