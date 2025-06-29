@@ -69,9 +69,9 @@ cd GrainPalette
 python -m venv .venv
 .venv\Scripts\activate
 
- Create Virtual Environment macOS/Linux:
-  python3 -m venv .venv
-  source .venv/bin/activate 
+   Create Virtual Environment macOS/Linux:
+    python3 -m venv .venv
+    source .venv/bin/activate 
 
 3. Install dependencies:
 pip install -r requirements.txt
