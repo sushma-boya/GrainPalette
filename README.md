@@ -43,26 +43,6 @@ https://drive.google.com/file/d/1Kq8apZpv0F30F-kIhxNCm5KnhcoWCtfr/view?usp=drive
 
 ---
 
-##  Run Locally
-
-```bash
-git clone https://github.com/sushma-boya/rice-type-classification.git
-cd rice-type-classification
-
-# Set up virtual environment
-python -m venv .venv
-# Activate it:
-# On Windows
-.venv\Scripts\activate
-# On Mac/Linux
-source .venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-python app.py
-
 #Project Structure
 Rice_type_detection/
 ├── app.py
