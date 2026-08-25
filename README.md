@@ -1,13 +1,17 @@
-🌾 GrainPalette: A Deep Learning Odyssey in Rice Type Classification
+# 🌾 GrainPalette: A Deep Learning Odyssey in Rice Type Classification
 
-GrainPalette is a powerful deep learning-powered web application built to classify rice grain images into five distinct types. Utilizing transfer learning , the system enables high-accuracy predictions directly from user-uploaded images via an intuitive web interface.
+GrainPalette is a deep learning-powered web application designed to classify rice grain images into five distinct varieties. Using transfer learning, the system delivers high-accuracy predictions from user-uploaded images through an intuitive and responsive web interface.
 
-#Demo video link
+## 🎥 Demo
+
+▶️ **Demo Video:**  
 https://drive.google.com/file/d/1Kq8apZpv0F30F-kIhxNCm5KnhcoWCtfr/view?usp=drive_link
-## Demo
 
-➡️ Upload an image of rice grain  
-✅ Model classifies it into one of the following types:
+### How It Works
+
+1. Upload an image of a rice grain.
+2. The trained deep learning model processes the image.
+3. The application predicts one of the following rice types:
 
 - Arborio
 - Basmati
@@ -15,174 +19,139 @@ https://drive.google.com/file/d/1Kq8apZpv0F30F-kIhxNCm5KnhcoWCtfr/view?usp=drive
 - Jasmine
 - Karacadag
 
+---
 
+## ✨ Features
 
-🔍 Features
-
-High Accuracy: Achieved 99.2% training accuracy with VGG16
-
-5 Rice Types: Supports Arborio, Basmati, Ipsala, Jasmine, Karacadag
-
-Real-Time Prediction: Upload → Predict → Result in seconds
-
-Web Interface: Built with Flask, HTML, and CSS
-
-Device Friendly: Mobile-responsive design
-
-
-## Tech Stack
-
-| Layer             | Tech Used              |
-|------------------|------------------------|
-| Deep Learning    | TensorFlow, Keras      |
-| Transfer Learning| MobileNetV2 (TF Hub)   |
-| Web Framework    | Flask                  |
-| Image Processing | OpenCV, NumPy          |
-| Frontend         | HTML, CSS, Bootstrap   |
+- 🎯 **High Accuracy** – Achieved approximately 99% accuracy using transfer learning.
+- 🌾 **Five Rice Types** – Supports classification of five distinct rice varieties.
+- ⚡ **Real-Time Prediction** – Upload an image and receive predictions within seconds.
+- 🌐 **Web-Based Interface** – Built using Flask with an interactive user interface.
+- 📱 **Responsive Design** – Designed to work across desktop and mobile devices.
+- 🧠 **Deep Learning Powered** – Uses a pretrained CNN model for image classification.
 
 ---
 
-#Project Structure
+## 🧠 Supported Rice Classes
 
+| Rice Type | Classification |
+|-----------|----------------|
+| Arborio | Supported |
+| Basmati | Supported |
+| Ipsala | Supported |
+| Jasmine | Supported |
+| Karacadag | Supported |
 
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Deep Learning | TensorFlow, Keras |
+| Transfer Learning | Pretrained CNN Model |
+| Web Framework | Flask |
+| Image Processing | OpenCV, NumPy |
+| Frontend | HTML, CSS, Bootstrap |
+
+---
+
+## 📁 Project Structure
+
+```text
 GrainPalette/
-├── app.py                     # Main Flask application
-├── rice_model.h5       # Trained deep learning model
-├── requirements.txt          # Python dependencies
-├── README.md                 # This file
+│
+├── app.py
+├── rice_model.h5
+├── requirements.txt
+├── README.md
+│
 ├── static/
-│   └── images/               # Icons and sample rice images
+│   └── images/
+│
 ├── templates/
-│   ├── index.html            # Home page for upload
-│   ├── results.html          # Prediction results display
-│   └── details.html          # Rice types description
-└── demo video/               # (Optional) Demo .mp4
+│   ├── index.html
+│   ├── results.html
+│   └── details.html
+│
+└── demo_video/
+```
+## ⚙️ Installation
 
-
-
-⚙ Installation
-
-✅ Prerequisites
-
-Python 3.8+
-
+Prerequisites
+Python 3.8 or above
 Git
+4GB+ RAM recommended
+GPU optional for model training
 
-4GB+ RAM (8GB recommended)
+## ▶️ Run the Project Locally
 
-GPU (optional for training)
-
-
-##  Run This Project Locally
-
-1. Clone the Repo
-
+1. Clone the Repository
 git clone https://github.com/sushma-boya/GrainPalette.git
+2. Navigate to the Project Directory
 cd GrainPalette
-
-🌀 2. Create Virtual Environment
-
-macOS/Linux:
-
-python3 -m venv .venv
-source .venv/bin/activate
-
-Windows:
-
+3. Create a Virtual Environment
+Windows
 python -m venv .venv
 .venv\Scripts\activate
-
-📦 3. Install Dependencies
-
+macOS / Linux
+python3 -m venv .venv
+source .venv/bin/activate
+4. Install Dependencies
 pip install -r requirements.txt
+5. Run the Flask Application
+python app.py
+6. Open the Application
 
-▶ 4. Run the Flask App
+Visit:
+http://127.0.0.1:5000
 
-  python app.py
-
-🌐 5. Open in Browser
-
-Visit: http://127.0.0.1:5000
-
-
----
-
-🧠 Model Architecture
-
-Base Model: VGG16 (pretrained on ImageNet)
-
-Input Size: 224×224 RGB
-
-Transfer Learning: Frozen convolution layers + custom dense layers
-
-Loss: Categorical Crossentropy
-
+## 🧠 Model Architecture
+Base Model: VGG16 pretrained on ImageNet
+Input Size: 224 × 224 RGB
+Transfer Learning: Pretrained convolutional layers with custom classification layers
+Loss Function: Categorical Crossentropy
 Optimizer: Adam
+Output Classes: 5
 
-Accuracy: ~99% on training and validation sets
+The model classifies uploaded rice grain images into one of the five supported categories.
 
----
+## 📈 Model Performance
 
-📈 Performance
-
-Metric	Value
-
+Metric	Performance
 Training Accuracy	99.2%
 Validation Accuracy	98.5%
 Inference Time	< 200ms
-
----
-
-📊 Supported Rice Classes
-
-Arborio
-
-Basmati
-
-Ipsala
-
-Jasmine
-
-Karacadag
-
----
-
 🚀 Future Enhancements
-
 🎥 Live camera feed support
+📱 Mobile application interface
+🧠 Advanced rice quality detection
+🌾 Broken grain detection
+🌐 Multi-language support
+📊 Prediction confidence visualization
 
-📱 Mobile app interface
+## 🤝 Contributing
+Contributions are welcome!
 
-🧠 Advanced rice quality detection (e.g., broken grains)
+Fork the repository.
+Create a new branch.
+Make your changes.
+Commit your changes with a clear message.
+Push the branch.
+Open a Pull Request.
 
-🌐 Multi-language interface
+## 👩‍💻 Author
 
----
+Sushma Boya
 
-🤝 Contributing
+Developer of GrainPalette, a deep learning application for rice grain image classification.
 
-Pull requests are welcome! Please:
+🔗 GitHub: https://github.com/sushma-boya
 
-Fork the repository
+## 📄 License
 
-Create a new branch
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
-Make your changes
+⭐ If you found this project useful, consider giving the repository a star!
 
-Commit with a clear message
-
-Submit a PR
-
----
-
-#Contact
-
-📧 info@grainpalette.ai
-📞 +91 98765 43210
-
-Made by Sushma Naidu
-
-# License
-This project is licensed under the MIT License — see the LICENSE file for details.
-
-Thankyou..
+Thank you for exploring GrainPalette! 🌾
