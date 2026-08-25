@@ -107,6 +107,7 @@ Visit:
 http://127.0.0.1:5000
 
 ## 🧠 Model Architecture
+```
 Base Model: VGG16 pretrained on ImageNet
 Input Size: 224 × 224 RGB
 Transfer Learning: Pretrained convolutional layers with custom classification layers
@@ -115,9 +116,10 @@ Optimizer: Adam
 Output Classes: 5
 
 The model classifies uploaded rice grain images into one of the five supported categories.
+```
 
 ## 📈 Model Performance
-
+```
 Metric	Performance
 Training Accuracy	99.2%
 Validation Accuracy	98.5%
@@ -129,17 +131,17 @@ Inference Time	< 200ms
 🌾 Broken grain detection
 🌐 Multi-language support
 📊 Prediction confidence visualization
-
+``` 
 ## 🤝 Contributing
 Contributions are welcome!
-
+```
 Fork the repository.
 Create a new branch.
 Make your changes.
 Commit your changes with a clear message.
 Push the branch.
 Open a Pull Request.
-
+```
 ## 👩‍💻 Author
 
 Sushma Boya
